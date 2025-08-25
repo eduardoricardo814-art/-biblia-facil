@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fffaf0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.7;
+  transition: background 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+h1 {
+  text-align: center;
+  color: #5a4fcf;
+}
+
+body.dark h1 {
+  color: #9f8dfb;
+}
+
+.sub {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.versiculo {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f0f8ff;
+  border-left: 4px solid #5a4fcf;
+  border-radius: 8px;
+}
+
+body.dark .versiculo {
+  background: #2d3748;
+  color: #a0aec0;
+}
+
+.botoes {
+  display: grid;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.btn {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  background: #5a4fcf;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+body.dark .btn {
+  background: #7f6df0;
+}
+
+.btn.voltar {
+  background: #718096;
+  font-size: 0.9em;
+}
+
+.dark-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #5a4fcf;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+body.dark .dark-toggle {
+  background: #9f8dfb;
+}
+
+.plano {
+  line-height: 2;
+  font-size: 1.1em;
+}
+
+.btn-share {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background: #25d366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
