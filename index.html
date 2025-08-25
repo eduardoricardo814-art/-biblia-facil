@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bíblia Fácil</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body onload="versiculoDoDia()">
+  <div class="container">
+    <h1>Bíblia Fácil</h1>
+    <p class="sub">Um versículo para sua alma hoje</p>
+
+    <div class="versiculo" id="versiculo">
+      Carregando versículo...
+    </div>
+
+    <div class="botoes">
+      <a href="leitura.html" class="btn">📖 Ler a Bíblia</a>
+      <a href="plano.html" class="btn">📅 Plano de Leitura</a>
+    </div>
+
+    <button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
