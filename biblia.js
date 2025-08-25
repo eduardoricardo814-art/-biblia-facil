@@ -41,3 +41,29 @@ const versoes = {
     ]
   }
 };
+let versaoAtual = "ACF";
+
+function mudarVersao(v) {
+  versaoAtual = v;
+  // Recarrega o capítulo com a nova versão
+  carregarCapitulo(livroAtual, capituloAtual);
+}
+
+function carregarCapitulo(livro, cap) {
+  const capitulo = versoes[versaoAtual][livro]?.find(c => c.capitulo === cap);
+  if (!capitulo) {
+    document.getElementById("titulo").textContent = "Não encontrado";
+    return;
+  }
+
+  document.getElementById("titulo").textContent = `${livro} ${cap}`;
+
+  const versiculosDiv = document.getElementById("versiculos");
+  versiculosDiv.innerHTML = "";
+
+  capitulo.versiculos.forEach((texto, i) => {
+    const p = document.createElement("p");
+    p.innerHTML = `<strong>${i+1}</strong> ${texto}`;
+    versiculosDiv.appendChild(p);
+  });
+}
