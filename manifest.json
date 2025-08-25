@@ -1,0 +1,9 @@
+{
+  "name": "Bíblia Fácil",
+  "short_name": "Fácil",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5a4fcf",
+  "description": "Um versículo por dia, simples e direto ao coração."
+}
